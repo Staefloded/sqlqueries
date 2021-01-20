@@ -1,0 +1,31 @@
+1. select count(*) as TotalNumbersOfUsers from teameleyowo2021; 
+
+2. select department, count(*) as numberofusers from teameleyowo2021                                               
+   where department='Accounting' 
+   group by department;
+   
+3. select status, count(*) as noofpendingusers from teameleyowo2021
+   where status='Pending'
+   group by status;
+
+4. select * from teameleyowo2021
+   order by id asc
+   limit 5;
+   
+5. select * from teameleyowo2021
+   where age between 18 and 25;
+   
+6. select * from teameleyowo2021 where createed_dt='2020-02-01';
+
+7. select * from teameleyowo2021 where createed_dt between '2020-04-01' and '2020-06-01'; 
+
+8. update teameleyowo2021
+   set status='Activated'
+   where status='Pending';
+
+9. update teameleyowo2021
+   set name='Timothy'
+   where name='Tim';
+   
+10. select department, count(*) as noofusers from teameleyowo2021
+    group by Department;
